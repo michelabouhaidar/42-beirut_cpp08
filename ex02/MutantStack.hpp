@@ -1,26 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   easyfind.hpp                                       :+:      :+:    :+:   */
+/*   MutantStack.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabou-ha <mabou-ha>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/02 21:27:43 by mabou-ha          #+#    #+#             */
-/*   Updated: 2025/11/02 21:42:31 by mabou-ha         ###   ########.fr       */
+/*   Created: 2025/11/03 00:10:17 by mabou-ha          #+#    #+#             */
+/*   Updated: 2025/11/03 00:10:18 by mabou-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EASYFIND_HPP
-#define EASYFIND_HPP
-
-#include <algorithm>
-#include <stdexcept>
-
-template<typename T>
-typename T::iterator easyfind(T& cont, int value);
-
-template<typename T>
-typename T::const_iterator easyfind(const T& cont, int value);
-
-#include "easyfind.tpp"
-#endif
