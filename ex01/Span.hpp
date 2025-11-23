@@ -6,7 +6,7 @@
 /*   By: mabou-ha <mabou-ha>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 23:02:24 by mabou-ha          #+#    #+#             */
-/*   Updated: 2025/11/02 23:59:55 by mabou-ha         ###   ########.fr       */
+/*   Updated: 2025/11/23 05:18:02 by mabou-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class Span
 		Span(const Span& obj);
 		Span& operator=(const Span& obj);
 		~Span();
+		int operator[](int index);
 		void addNumber(int nb);
 		int shortestSpan() const;
 		int longestSpan() const;

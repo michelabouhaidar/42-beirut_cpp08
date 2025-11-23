@@ -44,6 +44,11 @@
 		"optional": "cpp",
 		"random": "cpp",
 		"cwctype": "cpp",
-		"numbers": "cpp"
+		"numbers": "cpp",
+		"cstdarg": "cpp",
+		"ctime": "cpp",
+		"numeric": "cpp",
+		"iomanip": "cpp",
+		"sstream": "cpp"
 	}
 }

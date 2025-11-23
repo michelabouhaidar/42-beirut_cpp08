@@ -6,7 +6,7 @@
 /*   By: mabou-ha <mabou-ha>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 23:24:56 by mabou-ha          #+#    #+#             */
-/*   Updated: 2025/11/02 23:59:49 by mabou-ha         ###   ########.fr       */
+/*   Updated: 2025/11/23 05:18:06 by mabou-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,11 @@ void Span::addNumber(int nb)
 	if (numbers_.size() >= N_)
 		throw std::overflow_error("Maximum numbers N reached");
 	numbers_.push_back(nb);
+}
+
+int Span::operator[](int index)
+{
+	return numbers_[index];
 }
 
 int Span::shortestSpan() const

@@ -6,13 +6,14 @@
 /*   By: mabou-ha <mabou-ha>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 23:51:46 by mabou-ha          #+#    #+#             */
-/*   Updated: 2025/11/03 00:07:20 by mabou-ha         ###   ########.fr       */
+/*   Updated: 2025/11/23 05:19:14 by mabou-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Span.hpp"
 #include <iostream>
 #include <cstdlib>
+#include <iomanip>
 #include <ctime>
 
 int main()
@@ -35,11 +36,9 @@ int main()
             std::cout << "sp 42: " << e.what() << std::endl;
         }
 		sp.printNumbers();
-		
 		std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
 		std::cout << "Longest span : " << sp.longestSpan() << std::endl;
 		std::cout << std::endl;
-		
 		Span tiny(1);
         tiny.addNumber(7);
         try
@@ -54,7 +53,12 @@ int main()
 		Span bigSpan(10000);
 
 		for (int i = 0; i < 10000; i++)
-			bigSpan.addNumber(std::rand() % 10000001);
+		{
+			bigSpan.addNumber(std::rand() % 100000001);
+			// std::cout << std::setw(10) << static_cast<int>(bigSpan[i]);
+			// if (i % 15 == 0)
+			// 	std::cout << std::endl;
+		}
 		
 		std::cout << "Shortest span: " << bigSpan.shortestSpan() << std::endl;
 		std::cout << "Longest span : " << bigSpan.longestSpan() << std::endl;
